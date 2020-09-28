@@ -1,0 +1,16 @@
+.main-button {
+  display: block;
+  margin-top: 30px;
+  min-width: 200px;
+  padding: 10px 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+
+  color: $primary-white-color;
+  border-color: $accent-color;
+  background-color: $accent-color;
+}

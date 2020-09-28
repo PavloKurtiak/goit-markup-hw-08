@@ -1,0 +1,34 @@
+.advantages__list {
+  padding-left: 0;
+  flex-wrap: wrap;
+}
+.advantages__item {
+  width: calc((100% - 30px * 3) / 4);
+
+  margin-right: 30px;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.advantages__block {
+  display: flex;
+  height: 120px;
+  width: 270px;
+  background-color: $team-background-color;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.advantages__text {
+  margin-top: 10px;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+}

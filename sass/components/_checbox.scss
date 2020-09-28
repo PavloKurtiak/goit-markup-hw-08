@@ -1,0 +1,22 @@
+.checkbox__input {
+  appearance: none;
+}
+
+.checbox__icon::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 2px solid $title-text-color;
+  vertical-align: middle;
+  }
+
+.checkbox__input:checked ~ .checbox__icon::before {
+  content: "";
+  background-image: url(../images/icon-check.svg);
+  border: 2px solid $accent-color;
+  background-size: contain;
+  background-color: $accent-color;
+  background-origin: border-box;
+}

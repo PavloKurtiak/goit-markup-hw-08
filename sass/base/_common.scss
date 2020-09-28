@@ -1,0 +1,91 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section--no-padding {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.flexaling {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  border: 1px solid transparent;
+  &:focus {
+    outline: inherit;
+  }
+}
+
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $title-text-color;
+}
+
+.secondary-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  color: $title-text-color;
+}
+
+.secondary-title--color {
+  color: $primary-white-color;
+}
+
+.colum {
+  flex-direction: column;
+}
+
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

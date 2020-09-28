@@ -1,0 +1,52 @@
+
+.modal {
+  position: absolute;
+  min-width: 528px;
+  min-height: 581px;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: $primary-white-color;
+
+  transition: transform 250ms $cubic-bezier;
+  .backdrop__is-hidden & {
+    transform: scale(0.9) translate(-50%, -50%);
+  }
+}
+
+.modal__button {
+  position: absolute;
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 8px;
+  right: 8px;
+
+  background-color: $primary-white-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:hover, &:focus {
+    fill: $accent-color;
+  }
+}
+
+.modal__icon-close {
+  top: 50%;
+  right: 50%;
+  position: absolute;
+  transform: translate(50%, -50%);
+}
+
+.modal__text {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $title-text-color;
+}
