@@ -2,6 +2,10 @@
   background-color: $team-background-color;
 }
 
+.team__main-list {
+  @include flexbox();
+}
+
 .team__item {
   width: calc((100% - 30px * 3) / 4);
   flex-wrap: wrap;

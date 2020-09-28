@@ -1,3 +1,11 @@
+.site-nav {
+  @include flexbox($ai: center);
+}
+
+.site-nav__list {
+  @include flexbox;
+}
+
 .site-nav__item {
   position: relative;
   padding-top: 32px;

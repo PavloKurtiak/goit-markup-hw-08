@@ -1,3 +1,7 @@
+.work__list {
+  @include flexbox();
+}
+
 .work__item {
   width: calc((100% - 30px * 2) / 3);
   flex-wrap: wrap;
@@ -17,8 +21,8 @@
 }
 
 .work__position-title {
-  justify-content: center;
-  align-items: center;
+  @include flexbox($ai: center, $jc: center);
+  
   width: 100%;
   position: absolute;
   bottom: 0;

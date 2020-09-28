@@ -1,7 +1,10 @@
 .advantages__list {
+  @include flexbox();
   padding-left: 0;
   flex-wrap: wrap;
 }
+
+
 .advantages__item {
   width: calc((100% - 30px * 3) / 4);
 

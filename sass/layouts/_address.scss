@@ -3,7 +3,7 @@
 }
 
 .address__list {
-  display: flex;
+  @include flexbox();
   padding: 0;
   margin: 0;
   list-style: none;
@@ -14,13 +14,13 @@
 }
 
 .address__link {
+  @include flexbox($ai: center);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
   font-style: normal;
-  justify-content: center;
-  align-items: center;
+  
 
   color: $primary-text-color;
   fill: $primary-text-color;

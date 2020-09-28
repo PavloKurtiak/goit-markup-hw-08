@@ -1,4 +1,5 @@
 .customers__list {
+  @include flexbox();
   padding: 0;
 }
 
@@ -7,13 +8,12 @@
 }
 
 .customers__link {
+  @include flexbox($ai: center, $jc: center);
   fill: $icon-main-fell;
   width: 170px;
   height: 90px;
   border: 1px solid $icon-main-fell;
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
   margin-right: 30px;
 
   transition: fill 250ms $cubic-bezier, border-color 250ms $cubic-bezier;
