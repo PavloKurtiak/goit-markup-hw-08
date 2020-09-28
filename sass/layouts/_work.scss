@@ -1,3 +1,11 @@
+.work {
+  display: none;
+
+  @include for-size(desktop) {
+    display: block;
+  }
+}
+
 .work__list {
   @include flexbox();
 }

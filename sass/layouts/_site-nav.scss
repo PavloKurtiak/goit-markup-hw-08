@@ -1,5 +1,6 @@
 .site-nav {
-  @include flexbox($ai: center);
+  display: none;
+  /* @include flexbox($ai: center); */
 }
 
 .site-nav__list {

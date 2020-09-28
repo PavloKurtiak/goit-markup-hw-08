@@ -12,6 +12,7 @@ Use a better box model (opinionated).
 *,
 *::before,
 *::after {
+  /* outline: 2px solid red; */
   box-sizing: border-box;
 }
 
