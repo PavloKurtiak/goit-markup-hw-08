@@ -1,5 +1,5 @@
 .customers__list {
-  @include flexbox($ai: center, $jc: center);
+  @include flexbox($ai: center, );
   padding: 0;
   flex-wrap: wrap;
 
@@ -18,8 +18,7 @@
     margin-bottom: 0;
   }
   }
-
-  @media (max-width: 1199px) {
+  @include for-size(tablet) {
     margin-bottom: 30px;
     &:nth-child(3n) {
     margin-right: 0;
@@ -28,6 +27,7 @@
     margin-bottom: 0;
   }
   }
+  
   
   
   @include for-size(desktop) {
@@ -53,6 +53,10 @@
   &:hover, &:focus {
     fill: $accent-color;
   border-color: $accent-color;
+  }
+
+  @include for-size(tablet) {
+    width: 226px;
   }
 
   @include for-size(desktop) {
