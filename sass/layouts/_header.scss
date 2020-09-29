@@ -14,3 +14,9 @@
     }
 }
 
+.header__menu--mobile {
+    @include for-size(tablet) {
+        display: none;
+    }
+}
+

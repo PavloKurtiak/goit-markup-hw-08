@@ -485,6 +485,12 @@ ul {
           justify-content: space-between;
 }
 
+@media (min-width: 768px) {
+  .header__menu--mobile {
+    display: none;
+  }
+}
+
 .site-nav {
   display: none;
   /* @include flexbox($ai: center); */
@@ -496,6 +502,10 @@ ul {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.site-nav--mobile {
+  display: block;
 }
 
 .site-nav__list {
@@ -634,6 +644,10 @@ ul {
   .address {
     margin-left: auto;
   }
+}
+
+.address--mobile {
+  display: block;
 }
 
 .address__list {
