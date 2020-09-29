@@ -9,7 +9,7 @@ Use a better box model (opinionated).
 *,
 *::before,
 *::after {
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
