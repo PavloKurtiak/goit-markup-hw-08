@@ -1,3 +1,20 @@
+.mailing {
+  @media (max-width: 1199px) {
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+    
+}
+
+.mailing__form {
+  @media (max-width: 1199px) {
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+}
+
 .mailing__button {
   display: flex;
   align-items: center;

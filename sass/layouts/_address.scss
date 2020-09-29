@@ -8,6 +8,13 @@
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .address__item:not(:first-child) {

@@ -24,6 +24,13 @@
   @include for-size(tablet) {
     
   }
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  
+    &:last-child {
+    margin-bottom: 0;
+  }
+  }
 
   @include for-size(desktop) {
     flex-wrap: wrap;

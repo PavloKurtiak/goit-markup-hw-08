@@ -1,5 +1,13 @@
 .footer__container {
-  display: flex;
+  
+
+  @include for-size(desktop) {
+    display: flex;
   justify-content: space-between;
+  }
 }
 
+.footer__address {
+  @include flexbox ($ai: center, $jc: center);
+  flex-direction: column;
+}
