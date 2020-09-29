@@ -1,11 +1,14 @@
 .address {
   display: none;
-  margin-left: auto;
 
   @include for-size(tablet) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  @include for-size(desktop) {
+    margin-left: auto;
   }
 }
 

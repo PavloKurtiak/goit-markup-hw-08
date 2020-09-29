@@ -463,6 +463,13 @@ ul {
   padding-bottom: 16px;
 }
 
+@media (min-width: 768px) {
+  .header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -473,6 +480,9 @@ ul {
   -webkit-box-pack: baseline;
       -ms-flex-pack: baseline;
           justify-content: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .site-nav {
@@ -603,7 +613,6 @@ ul {
 
 .address {
   display: none;
-  margin-left: auto;
 }
 
 @media (min-width: 768px) {
@@ -618,6 +627,12 @@ ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .address {
+    margin-left: auto;
   }
 }
 

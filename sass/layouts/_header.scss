@@ -2,9 +2,14 @@
     padding-top: 16px;
     padding-bottom: 16px;
 
+    @include for-size(tablet) {
+        padding-top: 0;
+    padding-bottom: 0;
+    }
+
     &__container {
         @include flexbox($ai: center);
-        
+        justify-content: space-between;
         
     }
 }

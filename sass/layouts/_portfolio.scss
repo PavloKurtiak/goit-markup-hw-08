@@ -32,6 +32,11 @@
     width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
 
+  img {
+    width: 370px;
+    height: 294px;
+  }
+
   &:nth-child(3n) {
     margin-right: 0;
   }
