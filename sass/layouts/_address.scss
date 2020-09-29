@@ -38,6 +38,10 @@
     justify-content: center;
     
   }
+
+  @include for-size(desktop) {
+    flex-direction: column;
+  }
 }
 
 .address__item {

@@ -13,7 +13,7 @@
   <body>
     <!--Шапка-->
     <header class="header">
-      <!--основная-навигацыя-->
+      
       <div class="container header__container">
         <a href="" lang="en" class="logo">
           <span class="logo--blue">Web</span
@@ -196,12 +196,16 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list team__main-list">
             <li class="team__item">
-              <img
-                src="./images/8.jpg"
-                width="270"
-                height="260"
-                alt="фото Игорь Демьяненко"
-              />
+              <picture>
+                <source srcset="./images/8m.jpg 1x, ./images/8mx2.jpg 2x" media="(max-width: 767px)" />
+              
+                <source srcset="./images/8t.jpg 1x, ./images/8tx2.jpg 2x" media="(min-width: 768px)" />
+              
+                <source srcset="./images/8.jpg 1x, ./images/8x2.jpg 2x" media="(min-width: 1200px)" />
+              
+                <img src="./images/8.jpg" alt="фото Игорь Демьяненко" />
+              </picture>
+              
               <h3 class="team__employee-name">Игорь Демьяненко</h3>
               <p class="team__profession-name">Product Designer</p>
               <ul class="team__list">
@@ -256,12 +260,15 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/9.jpg"
-                width="270"
-                height="260"
-                alt="фото Ольга Репина"
-              />
+              <picture>
+                <source srcset="./images/9m.jpg 1x, ./images/9mx2.jpg 2x" media="(max-width: 767px)" />
+              
+                <source srcset="./images/9t.jpg 1x, ./images/9tx2.jpg 2x" media="(min-width: 768px)" />
+              
+                <source srcset="./images/9.jpg 1x, ./images/9x2.jpg 2x" media="(min-width: 1200px)" />
+              
+                <img src="./images/9.jpg" alt="фото Ольга Репина" />
+              </picture>              
               <h3 class="team__employee-name">Ольга Репина</h3>
               <p class="team__profession-name">Frontend Developer</p>
               <ul class="team__list">
@@ -316,12 +323,15 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/10.jpg"
-                width="270"
-                height="260"
-                alt="фото Николай Тарасов"
-              />
+              <picture>
+                <source srcset="./images/10m.jpg 1x, ./images/10mx2.jpg 2x" media="(max-width: 767px)" />
+              
+                <source srcset="./images/10t.jpg 1x, ./images/10tx2.jpg 2x" media="(min-width: 768px)" />
+              
+                <source srcset="./images/10.jpg 1x, ./images/10x2.jpg 2x" media="(min-width: 1200px)" />
+              
+                <img src="./images/10.jpg" alt="фото Николай Тарасов" />
+              </picture>              
               <h3 class="team__employee-name">Николай Тарасов</h3>
               <p class="team__profession-name">Marketing</p>
               <ul class="team__list">
@@ -376,12 +386,16 @@
               </ul>
             </li>
             <li class="team__item">
-              <img
-                src="./images/11.jpg"
-                width="270"
-                height="260"
-                alt="фото Михаил Ермаков"
-              />
+              <picture>
+                <source srcset="./images/11m.jpg 1x, ./images/11mx2.jpg 2x" media="(max-width: 767px)" />
+              
+                <source srcset="./images/11t.jpg 1x, ./images/11tx2.jpg 2x" media="(min-width: 768px)" />
+              
+                <source srcset="./images/11.jpg 1x, ./images/11x2.jpg 2x" media="(min-width: 1200px)" />
+              
+                <img src="./images/11.jpg" alt="фото Михаил Ермаков" />
+              </picture>
+              
               <h3 class="team__employee-name">Михаил Ермаков</h3>
               <p class="team__profession-name">UI Designer</p>
               <ul class="team__list">

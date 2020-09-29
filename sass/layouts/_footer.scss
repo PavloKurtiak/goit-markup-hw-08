@@ -20,4 +20,8 @@
   @media (max-width: 1199px) {
     margin-bottom: 60px;
   }
+
+  @include for-size(desktop) {
+    align-items: baseline;
+  }
 }

@@ -7,7 +7,7 @@
 
   @include for-size(tablet) {
     @include flexbox();
-
+    flex-wrap: wrap;
   }
 }
 
@@ -27,19 +27,29 @@
     flex-wrap: wrap;
     /* width: 354px; */
     margin-right: 30px;
-
-    &:nth-child(2n) {
+    margin-bottom: 30px;
+    /* &:nth-child(2n) {
     margin-right: 0;
+    } */
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
     }
+
   }
   @media (max-width: 767px) {
-    margin-bottom: 30px;
+    
   
     &:last-child {
     margin-bottom: 0;
   }
   }
-
+  @media (max-width: 1199px) {
+    &:nth-child(2n) {
+    margin-right: 0;
+    }
+  }
+    
+  
   @include for-size(desktop) {
     flex-wrap: wrap;
     width: calc((100% - 30px * 3) / 4);
