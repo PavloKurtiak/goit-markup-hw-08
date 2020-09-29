@@ -9,8 +9,13 @@
   background-position: center;
   background-size: cover;
   max-width: 1600px;
-  min-height: 600px;
+  min-height: 400px;
   background-color: $background-hero-color;
+
+
+  @include for-size(desktop) {
+    min-height: 600px;
+  }
 }
 
 .hero__title {

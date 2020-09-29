@@ -1,20 +1,31 @@
 .logo {
   
   font-family: $secondary-font, sans-serif;
-  margin-right: 93px;
-
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  @include font($fs: 24px, $lh: 1.17, $fw: 700);
   letter-spacing: 0.03em;
 
   color: $title-text-color;
 
   @media (max-width: 1199px){
     display: flex;
-    
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
   }
+
+  @include for-size(tablet) {
+    /* margin-right: 75px; */
+  }
+
+  @include for-size(desktop) {
+    @include font($fs: 26px, $lh: 1.2, $fw: 700);
+    margin-right: 93px;
+  }
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo--blue {

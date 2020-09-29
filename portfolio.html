@@ -14,46 +14,38 @@
   <body>
     <header class="header">
       <!--основная-навигацыя-->
-      <div class="container flexbox flexaling header-flexbox">
-        <nav class="flexbox flexaling site-nav">
-          <a href="" lang="en" class="logo">
-            <span class="logo--blue">Web</span
-            ><span class="logo--black">Studio</span></a
-          >
-          <ul class="flexbox site-nav__list list">
+      <div class="container header__container">
+        <a href="" lang="en" class="logo">
+          <span class="logo--blue">Web</span><span class="logo--black">Studio</span></a>
+        <nav class="site-nav">
+          <ul class="site-nav__list list">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студия</a>
+              <a href="./index.html" class="site-nav__link ">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a
-                href="./portfolio.html"
-                class="site-nav__link site-nav__link--current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
             </li>
             <li class="site-nav__item">
               <a href="" class="site-nav__link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <!--адрес-->
+    
         <address class="address">
-          <ul class="flexbox list address__list">
+          <ul class="list address__list">
             <li class="address__item">
-              <a href="mailto:info@devstudio.com" class="flexbox address__link">
+              <a href="mailto:info@devstudio.com" class="address__link">
                 <svg class="address__icon" width="16" height="16">
                   <use href="./images/svg.svg#icon-email"></use>
                 </svg>
-                info@devstudio.com</a
-              >
+                info@devstudio.com</a>
             </li>
             <li class="address__item">
-              <a href="tel:+380961111111" class="flexbox address__link">
+              <a href="tel:+380961111111" class="address__link">
                 <svg class="address__icon" width="16" height="16">
                   <use href="./images/svg.svg#icon-phone"></use>
                 </svg>
-                +38 096 111 11 11</a
-              >
+                +38 096 111 11 11</a>
             </li>
           </ul>
         </address>
@@ -64,7 +56,7 @@
         <div class="container">
           <!-- фильтр -->
           <h1 class="hidden-title" aria-label="Фильтр">Фильтр</h1>
-          <ul class="flexbox filter list">
+          <ul class="filter list">
             <li class="filter__item">
               <button class="button filter__button" type="button">Все</button>
             </li>
@@ -89,9 +81,9 @@
               </button>
             </li>
           </ul>
-          <!-- портфолио -->
+
           <h2 class="hidden-title" aria-label="Портфолио">Портфолио</h2>
-          <ul class="flexbox list portfolio__list">
+          <ul class="list portfolio__list">
             <li class="portfolio__item">
               <a href="">
                 <div class="portfolio__images">
@@ -285,25 +277,19 @@
     <!--футер-->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="flexbox colum">
+        <div class="footer__address">
           <a href="" lang="en" class="logo">
-            <span class="logo--blue">Web</span
-            ><span class="logo--white">Studio</span></a
-          >
+            <span class="logo--blue">Web</span><span class="logo--white">Studio</span></a>
           <address>
-            <ul class="list">
+            <ul class="address__list">
               <li class="address__text address--position">
                 г. Киев, пр-т Леси Украинки, 26
               </li>
               <li class="address--position">
-                <a href="mailto:info@example.com" class="address__link"
-                  >info@example.com</a
-                >
+                <a href="mailto:info@example.com" class="address__link">info@example.com</a>
               </li>
               <li class="address--position">
-                <a href="tel:+380991111111" class="address__link"
-                  >+38 099 111 11 11</a
-                >
+                <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -312,48 +298,28 @@
           <b class="secondary-title secondary-title--color">ПРИСОЙДЕНЯЙТЕСЬ</b>
           <ul class="flexbox social__list">
             <li class="flexbox social-item">
-              <a
-                href=""
-                class="flexbox social-link social-link--color"
-                lang="en"
-                aria-label="instagram"
-              >
+              <a href="" class="flexbox social-link social-link--color" lang="en" aria-label="instagram">
                 <svg class="link-icon" width="20" height="20">
                   <use href="./images/svg.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="flexbox social-item">
-              <a
-                href=""
-                class="flexbox social-link social-link--color"
-                lang="en"
-                aria-label="twitter"
-              >
+              <a href="" class="flexbox social-link social-link--color" lang="en" aria-label="twitter">
                 <svg class="link-icon" width="20" height="20">
                   <use href="./images/svg.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="flexbox social-item">
-              <a
-                href=""
-                class="flexbox social-link social-link--color"
-                lang="en"
-                aria-label="facebook"
-              >
+              <a href="" class="flexbox social-link social-link--color" lang="en" aria-label="facebook">
                 <svg class="link-icon" width="20" height="20">
                   <use href="./images/svg.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="flexbox social-item">
-              <a
-                href=""
-                class="flexbox social-link social-link--color"
-                lang="en"
-                aria-label="linkedin"
-              >
+              <a href="" class="flexbox social-link social-link--color" lang="en" aria-label="linkedin">
                 <svg class="link-icon" width="20" height="20">
                   <use href="./images/svg.svg#icon-linkedin"></use>
                 </svg>
@@ -362,21 +328,10 @@
           </ul>
         </div>
         <div class="mailing">
-          <b class="secondary-title secondary-title--color"
-            >ПОДПИШИТЕСЬ НА РАССЫЛКУ</b
-          >
+          <b class="secondary-title secondary-title--color">ПОДПИШИТЕСЬ НА РАССЫЛКУ</b>
           <form class="flexbox mailing__form">
-            <input
-              class="mailing__input"
-              type="email"
-              name="email"
-              id=""
-              placeholder="E-mail"
-            />
-            <button
-              type="submit"
-              class="button main-button flexbox mailing__button"
-            >
+            <input class="mailing__input" type="email" name="email" id="" placeholder="E-mail" />
+            <button type="submit" class="button main-button flexbox mailing__button">
               Подписаться
               <svg class="link-icon mailing__icon" width="24" height="24">
                 <use href="./images/svg.svg#icon-follow"></use>

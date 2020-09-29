@@ -1,6 +1,10 @@
 .site-nav {
   display: none;
   /* @include flexbox($ai: center); */
+
+  @include for-size(tablet) {
+    display: flex;
+  }
 }
 
 .site-nav__list {
