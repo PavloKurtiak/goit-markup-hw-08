@@ -14,6 +14,8 @@
 }
 .address--mobile {
   display: block;
+  background-color: $primary-white-color;
+  padding-top: 0;
 }
 
 .address__list {
@@ -29,6 +31,13 @@
     justify-content: baseline;
     
   }
+}
+
+.address__list--mobile {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .address__list--footer {
@@ -63,6 +72,13 @@
     }
   }
 
+}
+
+.address__item--mobil {
+  margin-bottom: 16px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 

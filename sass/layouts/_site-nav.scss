@@ -9,10 +9,20 @@
 
 .site-nav--mobile {
   display: block;
+  background-color: $primary-white-color;
+  width: 100%;
 }
 
 .site-nav__list {
   @include flexbox;
+}
+
+.site-nav__list--mobile {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 .site-nav__item {
@@ -21,8 +31,19 @@
   padding-bottom: 32px;
   text-align: center;
 
-  &.site-nav__item:not(:last-child) {
+  @include for-size(tablet) {
+    &:not(:last-child) {
     margin-right: 50px;
+  }
+}
+}
+
+.site-nav__item--mobile {
+  padding-top: 0;
+  padding-bottom: 8px;
+  margin-bottom: 40px;
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 

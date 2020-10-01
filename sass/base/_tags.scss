@@ -10,6 +10,11 @@ header {
 
   border-color: $header-border-color;
   background-color: $primary-white-color;
+
+  
+    @media (max-width: 767px) {
+        display: flex;
+    }
 }
 
 footer {
