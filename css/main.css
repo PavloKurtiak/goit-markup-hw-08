@@ -1231,7 +1231,7 @@ ul {
   }
 }
 
-@media (min-width: 481px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .customers__item:nth-child(3n) {
     margin-right: 0;
   }
