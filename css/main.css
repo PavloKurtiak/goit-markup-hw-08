@@ -1437,6 +1437,7 @@ ul {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -1487,6 +1488,12 @@ ul {
 @media (max-width: 1199px) {
   .mailing__input {
     margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .mailing__input {
     width: 450px;
   }
 }

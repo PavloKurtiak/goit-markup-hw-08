@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+    width: 100%;
     }
 }
 
@@ -45,8 +45,12 @@
 
   @media (max-width: 1199px) {
     margin-bottom: 20px;
-    width: 450px;
+    width: 100%;
   }
+
+  @include for-size(tablet) {
+    width: 450px;
+  } 
 
   @include for-size(desktop) {
     width: 358px;
