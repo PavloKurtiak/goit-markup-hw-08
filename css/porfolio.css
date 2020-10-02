@@ -1207,7 +1207,12 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 0;
-  margin-left: 12px;
+}
+
+@media (min-width: 1200px) {
+  .mailing__button {
+    margin-left: 12px;
+  }
 }
 
 .mailing__icon {
