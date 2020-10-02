@@ -32,7 +32,7 @@
   }
 }
 
-.menu-button .icon-cross {
+.menu-button__icon-cross {
   display: none;
 }
 .menu-button {
@@ -47,11 +47,11 @@
   }
 }
 
-.menu-button.is-open .icon-cross {
+.menu-button__icon-cross.is-open{
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-button__icon-menu.is-open{
   display: none;
 }
 

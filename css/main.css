@@ -1789,7 +1789,7 @@ ul {
   }
 }
 
-.menu-button .icon-cross {
+.menu-button__icon-cross {
   display: none;
 }
 
@@ -1801,11 +1801,11 @@ ul {
   outline: 1px transparent solid;
 }
 
-.menu-button.is-open .icon-cross {
+.menu-button__icon-cross.is-open {
   display: block;
 }
 
-.menu-button.is-open .icon-menu {
+.menu-button__icon-menu.is-open {
   display: none;
 }
 
