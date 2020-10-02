@@ -290,6 +290,10 @@ body {
   color: #757575;
 }
 
+.body--modal-open {
+  overflow: hidden;
+}
+
 header {
   border: 1px solid;
   border-color: #ececec;

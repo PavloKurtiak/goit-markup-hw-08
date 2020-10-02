@@ -5,6 +5,10 @@ body {
   color: $primary-text-color;
 }
 
+.body--modal-open {
+  overflow: hidden;
+}
+
 header {
   border: 1px solid;
 

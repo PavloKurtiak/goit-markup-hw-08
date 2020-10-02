@@ -2,6 +2,17 @@
   appearance: none;
 }
 
+.checbox {
+  @media (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+   @include for-size(desktop) {
+     font-size: 14px;
+    line-height: 1.71;
+   }
+}
+
 .checbox__icon::before {
   content: "";
   display: inline-block;

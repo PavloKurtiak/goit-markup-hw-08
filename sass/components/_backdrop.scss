@@ -8,6 +8,10 @@
 
   opacity: 1;
   transition: opacity 250ms $cubic-bezier;
+
+  @media (max-width: 1199px){ 
+    overflow-y: scroll; 
+  }
 }
 
 .backdrop__is-hidden {
