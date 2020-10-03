@@ -836,7 +836,13 @@ ul {
 }
 
 .address__icon {
-  margin-right: 10px;
+  margin-right: 8px;
+}
+
+@media (min-width: 1200px) {
+  .address__icon {
+    margin-right: 10px;
+  }
 }
 
 .address__text {
@@ -1275,6 +1281,15 @@ ul {
       flex-wrap: wrap;
 }
 
+@media (max-width: 479px) {
+  .customers__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .customers__item {
   margin-right: 30px;
   margin-bottom: 30px;
@@ -1282,6 +1297,18 @@ ul {
 
 .customers__item:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 479px) {
+  .customers__item {
+    margin-right: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {

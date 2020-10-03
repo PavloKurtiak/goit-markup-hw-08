@@ -104,7 +104,11 @@
 }
 
 .address__icon {
-  margin-right: 10px;
+  margin-right: 8px;
+
+  @include for-size(desktop) {
+    margin-right: 10px;
+  }
 }
 
 .address__text {

@@ -6,7 +6,26 @@
     justify-content: center;
   }
 }
+.filter__item {
+  margin-bottom: 15px;
+  @media (max-width: 405px) {
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
 
+  @media (min-width: 406px) and (max-width: 767px) {
+    
+
+    &:nth-child(n + 4) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @include for-size(tablet) {
+    margin-bottom: 50px;
+  }
+}
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
@@ -14,7 +33,7 @@
 
 .filter__button {
   padding: 6px 22px;
-  margin-bottom: 50px;
+  
 
   font-weight: 500;
   font-size: 16px;

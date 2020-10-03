@@ -102,6 +102,12 @@
 
 .portfolio__overley-text {
   @include flexbox($ai: center, $jc: center);
+
+
+
+  @media (max-width: 330px) {
+    font-size: 14px;
+  }
   padding-left: 24px;
   padding-right: 24px;
   position: absolute;
