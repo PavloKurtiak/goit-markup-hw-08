@@ -17,6 +17,13 @@
 .advantages__item {
   margin-bottom: 30px;
   
+  @media (max-width: 767px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    
+  }
   
   @include for-size(tablet) {
     width: calc((100% - 30px) / 2);
@@ -29,7 +36,7 @@
     
   }
 
-  @media (max-width: 1199px) {
+  @media (min-width:768px) and (max-width: 1199px) {
       &:nth-child(2n) {
     margin-right: 0;
     }

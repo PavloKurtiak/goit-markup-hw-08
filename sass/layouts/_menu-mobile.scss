@@ -32,9 +32,10 @@
   }
 }
 
-.menu-button__icon-cross {
+.menu-button .icon-cross {
   display: none;
 }
+
 .menu-button {
   &:hover {
     fill: $accent-color;
@@ -47,11 +48,11 @@
   }
 }
 
-.menu-button__icon-cross.is-open{
+.menu-button.is-open .icon-cross {
   display: block;
 }
 
-.menu-button__icon-menu.is-open{
+.menu-button.is-open .icon-menu {
   display: none;
 }
 
